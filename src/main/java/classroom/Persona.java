@@ -2,13 +2,21 @@ package classroom;
 
 public class Persona {
 
-    final long cedula;
+    public long cedula ;
     String nombre;
     static int totalPersonas;
     
     static {
         totalPersonas = 0;
-        cedula = 3;
+        
+    }
+    
+    public Persona() {
+    	this.nombre = "Sin nombre";
+    	this.cedula = 0;
+    	totalPersonas++;
+    			
+    	
     }
 
     public Persona(long cedula, String nombre) {
